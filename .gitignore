@@ -1,0 +1,6 @@
+# Default ignored files
+/workspace.xml
+.idea/*
+lib/__pycache__/*
+__pycache__\test_pytest_sbdl.cpython-37-pytest-7.1.1.pyc
+
