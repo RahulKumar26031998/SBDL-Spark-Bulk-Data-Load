@@ -4,6 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+               bat 'cd C:\Users\nishi\Desktop\git-sbdl\SBDL-Spark-Bulk-Data-Load'
+            }
+        }
+        stage('Build') {
+            steps {
                bat 'pipenv --python Python3.7 sync'
             }
         }
@@ -12,6 +17,6 @@ pipeline {
                bat 'pipenv run pytest'
             }
         }
-      }
-   }
+    }
+}
 
