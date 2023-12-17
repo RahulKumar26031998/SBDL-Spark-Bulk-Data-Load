@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh 'pipenv --python C:\Python sync'
+               bat 'pipenv --python Python3.7 sync'
             }
         }
         stage('Test') {
             steps {
-               sh 'pipenv run pytest'
+               bat 'pipenv run pytest'
             }
         }
       }
